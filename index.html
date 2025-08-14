@@ -1,25 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio de Sessión</title>
+    <link href="./static/style/estilo.css" rel="stylesheet" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link href="./static/style/estilo.css" rel="stylesheet">
-</head>
+  <body class="login-body-main">
+    <header class="header-login">
+      <div class="nav-login">
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-element">Pethub</li>
+            <li class="nav-element">Home</li>
+          </ul>
+        </nav>
+        <p class="header-phrase">Conecta con mas amantes de las mascotas</p>
+        <img class="logo" src="" alt="logo de la wea" />
+      </div>
+    </header>
 
-<body>
-	<header>
+    <main>
+      <div class="form-login">
+        <h2 class="form-title">Ingresar</h2>
+        <form class="login-form">
+          <label class="login-form-label">Correo Electronico</label>
+          <input
+            class="login-form-input"
+            type="email"
+            name=""
+            placeholder="example@gmail.com"
+          />
+          <label class="login-form-label">Contraseña</label>
+          <input
+            class="login-form-input"
+            type="password"
+            placeholder="*******"
+          />
+          <button class="button-login">Iniciar Sesión</button>
 
-	</header>
+          <a class="login-link" href="#">¿Haz olvidado tu contraseña?</a>
+          <a class="login-link" href="#">Registrate si no tienes una cuenta</a>
+        </form>
+      </div>
+    </main>
 
-	<main>
+    <footer class="footer-login">
+      <div class="footer-contact">
+        <h1>Contactos</h1>
+        <p class="footer-contact-option">
+          <strong>Telefono:</strong> +56 2 1234 5678
+        </p>
+        <p class="footer-contact-option">
+          <strong>Correo Electronico:</strong><a href="#">contacto@pethub.cl</a>
+        </p>
+        <p class="footer-contact-option">
+          <strong>Horarios de atencion:</strong> Lunes a Viernes 09:00 – 18:00
+        </p>
+      </div>
 
-	</main>
-
-	<footer>
-
-	</footer>
-</body>
-
+      <div class="footer-terms">
+        <h1>Politicas</h1>
+        <ul class="list-terms">
+          <li class="list-terms-option">Politica de privacidad</li>
+          <li class="list-terms-option">Terminos y condiciones</li>
+          <li class="list-terms-option">Devoluciones y garantias</li>
+          <li class="list-terms-option">Preguntras frecuentes</li>
+        </ul>
+      </div>
+      <div class="footer-social-media">
+        <h1>Redes Sociales</h1>
+        <p class="social-media">
+          <strong>Facebook:</strong><a href="#">@pethuboficial</a>
+        </p>
+        <p class="social-media">
+          <strong>Instagram:</strong><a href="#">@pethub.cl</a>
+        </p>
+        <p class="social-media">
+          <strong>Twitter:</strong><a href="#">@pethub</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
