@@ -1,93 +1,255 @@
-/* Header */
-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh
+/* HEADER */
+
+/* Index */
+header{
+ font-family: 'Fredoka';
 }
-main{
-    background-color: floralwhite;
-}
-.header-login{
-    color: white;
-    background-color: green;
-    font-size: large;
-    margin: 0;
-    padding: 0;
+.header-login {
+  color: white;
+  background-color: rgb(23, 22, 22);
+  font-size: large;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-login{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.nav-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-list{
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    padding: 2;
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.logo {
+  border-radius: 10em;
+  max-height: 50px;
+  padding: 10px;
+}
+/* home */
+
+.home-header {
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(23, 22, 22);
+  color: white;
 }
 
-/* Main */
-
-.form-login{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: black solid 15px;
-    background-color: dimgray;
-    color: white;
-    align-items: center;
-    max-width: 40%;
-    margin: 0 auto;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.login-form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.home-nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+.hom-nav-option{
+  text-decoration: none;
+  color:inherit; 
+}
+.hom-nav-option:hover {
+  background-color: rgb(44, 42, 42);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3 ease;
 }
 
-.button-login{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: white;
-    background-color: green;
-    border: black solid 1px;
-    border-radius: 10px;
-    padding: 10px;
+.home-logo {
+  padding-right: 50px;
+  max-height: 50px;
+}
+/* MAIN */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../assets/fondoWeb.png");
+  font-family: 'Fredoka';
+}
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: black solid 1px;
+  border-radius: 10px;
+  background-color: rgb(23, 22, 22);
+  color: white;
+  align-items: center;
+  max-width: 30%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: 'Fredoka';
 }
 
-.login-link{
-    color:white; 
+.form-title-container{
+    padding:0px 160px;
+    background-color:rgb(15, 15, 15) ;
+    margin-bottom: 20px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* footer */
-.footer-login{
-    margin-top: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: green;
-    color: white;
+.button-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  gap: 20px;
+  font-family: 'Fredoka';
+  font-size: large;
+  color: white;
+  background-color: blue;
+  border: black solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.button-login:hover {
+  background-color: rgb(5, 15, 163);
+  cursor: pointer;
 }
 
+.login-form-input {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: ghostwhite;
+  font-family: 'Fredoka';
+  font-size: large;
+}
+.login-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+}
 
+/* Home page */
+.home-container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(23, 22, 22);
+  margin: 50px 300px;
+}
 
+.user-info {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: rgb(19, 18, 18);
+  align-items: flex-start;
+  padding: 10px 0px;
+}
+.user-photo{
+  border-radius: 100px;
+  max-height: 50px; 
+  padding: 0px 10px;
+}
+.user-post{
+  border:solid black 1px;
+  border-top-left-radius: 12px;
+  border-top-right-radius:12px ;
+  height: 30rem; 
+}
+.user-option{
+  max-width: 100%;
+  background-color: rgb(19, 18, 18);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 15px;
+  width: 98%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.post-options{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  width: 100%;
+  margin-left: 30px;
+}
+.post-description{
+  width: 100%;
+}
+.post-int-icon{
+  max-height: 100px;
+  padding:12px 8px;
+  background-color: rgb(19, 18, 18);
+  max-width: 100%;
+}
+.post-int-icon:hover{
+  max-height: 100px;
+  cursor:pointer;
+  background-color:rgb(56, 54, 54);
+  border-radius: 50px;
+  padding:12px 8px;
 
+}
+/* FOOTER */
+.footer-login {
+  font-size: small;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(23, 22, 22);
+  color: white;
+}
 
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer-contact-option {
+  padding: 0;
+  margin: 5px;
+}
 
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.term-element {
+  padding: 0;
+  margin: 5px;
+}
 
-
-
-
-
-
-
-
-
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.social-media {
+  padding: 0;
+  margin: 5px;
+}

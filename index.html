@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Inicio de Sessión</title>
     <link href="./static/style/estilo.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="login-body-main">
+  <body class="index">
     <header class="header-login">
       <div class="nav-login">
         <nav class="main-nav">
           <ul class="nav-list">
             <li class="nav-element">Pethub</li>
-            <li class="nav-element">Home</li>
           </ul>
         </nav>
         <p class="header-phrase">Conecta con mas amantes de las mascotas</p>
-        <img class="logo" src="" alt="logo de la wea" />
+        <img
+          class="logo"
+          src="./static/assets/pethub_logo.png"
+          alt="logo_pethub"
+        />
       </div>
     </header>
 
@@ -38,7 +48,7 @@
             type="password"
             placeholder="*******"
           />
-          <button class="button-login">Iniciar Sesión</button>
+          <a class="button-login" href="./home.html">Iniciar Sesión</a>
 
           <a class="login-link" href="#">¿Haz olvidado tu contraseña?</a>
           <a class="login-link" href="#">Registrate si no tienes una cuenta</a>
@@ -48,27 +58,25 @@
 
     <footer class="footer-login">
       <div class="footer-contact">
-        <h1>Contactos</h1>
-        <p class="footer-contact-option">
-          <strong>Telefono:</strong> +56 2 1234 5678
-        </p>
+        <h1>Contacto</h1>
         <p class="footer-contact-option">
           <strong>Correo Electronico:</strong><a href="#">contacto@pethub.cl</a>
-        </p>
-        <p class="footer-contact-option">
-          <strong>Horarios de atencion:</strong> Lunes a Viernes 09:00 – 18:00
         </p>
       </div>
 
       <div class="footer-terms">
         <h1>Politicas</h1>
-        <ul class="list-terms">
-          <li class="list-terms-option">Politica de privacidad</li>
-          <li class="list-terms-option">Terminos y condiciones</li>
-          <li class="list-terms-option">Devoluciones y garantias</li>
-          <li class="list-terms-option">Preguntras frecuentes</li>
-        </ul>
+        <p class="term-element">
+          <strong><a href="#">Politcas de privacidad</a></strong>
+        </p>
+        <p class="term-element">
+          <strong><a href="#">Terminos y condiciones</a></strong>
+        </p>
+        <p class="term-element">
+          <strong><a href="#">Preguntas Frecuentes</a></strong>
+        </p>
       </div>
+
       <div class="footer-social-media">
         <h1>Redes Sociales</h1>
         <p class="social-media">
