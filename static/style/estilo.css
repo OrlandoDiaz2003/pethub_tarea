@@ -1,6 +1,6 @@
 /* HEADER */
 
-/* Index */
+/* Index header*/
 header{
  font-family: 'Fredoka';
 }
@@ -29,7 +29,7 @@ header{
   max-height: 50px;
   padding: 10px;
 }
-/* home */
+/* home header*/
 
 .home-header {
   font-size: large;
@@ -65,15 +65,28 @@ header{
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .home-logo {
   padding-right: 50px;
   max-height: 50px;
 }
+
+/* explorer header */
+.explorer-header{
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(23, 22, 22);
+  color: white;
+}
 /* MAIN */
 
+/* index main */
 body {
   margin: 0;
   padding: 0;
@@ -144,7 +157,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Home page */
+/* Home main*/
 .home-container{
   color: white;
   display: flex;
@@ -210,7 +223,11 @@ body {
   background-color:rgb(56, 54, 54);
   border-radius: 50px;
   padding:12px 8px;
-
+  transition: all 0.9s ease;
+}
+/* Explorer main */
+.main-explorer{
+  color: red;
 }
 /* FOOTER */
 .footer-login {
