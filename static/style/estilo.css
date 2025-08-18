@@ -339,16 +339,36 @@ body {
 /* profile main */
 .user-profile-container{
     color:white;
-    background-color: rgb(23, 22, 22);
     font-size: large;
+    background-color: black;
 }
 .user-profile-header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0vh 10vh;
+}
+.user-profile-info{
+    margin-top: 5vh;
+    margin-left: 5vh;
+    background-color: black;
 }
 
+.user-profile-photo{
+    border-radius: 20px;
+    max-height: 90px;
+    max-width: 100px;
+}
+.user-profile-posts{
+    display: flex;
+    padding:0;
+    margin:0;
+}
+
+.user-photo-profile{
+    max-height: 100vh;
+    max-width: 10rem;
+    border: black 1px solid;
+}
 /* FOOTER */
 .footer-login {
   font-size: small;
