@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrarse</title>
+    <link href="./static/style/estilo.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="index">
+    <header class="header-login">
+      <div class="nav-login">
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-element">Pethub</li>
+          </ul>
+        </nav>
+        <p class="header-phrase">Registrate para conectar mas amantes de las mascotas</p>
+        <img
+          class="logo"
+          src="./static/assets/pethub_logo.png"
+          alt="logo_pethub"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div class="form-login">
+        <h2 class="form-title">Registrarse</h2>
+        <form class="login-form">
+
+          <label class="login-form-label">Nombre Completo</label>
+          <input
+			id="user-name-register"
+            class="login-form-input"
+            type="text"
+            name=""
+            placeholder="Nombre completo"
+          />
+          <label class="login-form-label">Correo Electronico</label>
+          <input
+			id="user-email-register"
+            class="login-form-input"
+            type="email"
+            name=""
+            placeholder="example@gmail.com"
+          />
+          <label class="login-form-label">Contraseña</label>
+          <input
+			id="user-password-register"
+            class="login-form-input"
+            type="password"
+            placeholder="*******"
+          />
+
+          <label class="login-form-label">Confirma tu contraseña</label>
+          <input
+			id="user-password-register-confirmation"
+            class="login-form-input"
+            type="password"
+            placeholder="*******"
+          />
+          <button id="register-button" class="button-login" type="submit">Registrate</button>
+
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer-login">
+      <div class="footer-contact">
+        <h1>Contacto</h1>
+        <p class="footer-contact-option">
+          <strong>Correo Electronico:</strong><a href="#">contacto@pethub.cl</a>
+        </p>
+      </div>
+
+      <div class="footer-terms">
+        <h1>Politicas</h1>
+        <p class="term-element">
+          <strong><a href="#">Politcas de privacidad</a></strong>
+        </p>
+        <p class="term-element">
+          <strong><a href="#">Terminos y condiciones</a></strong>
+        </p>
+        <p class="term-element">
+          <strong><a href="#">Preguntas Frecuentes</a></strong>
+        </p>
+      </div>
+
+      <div class="footer-social-media">
+        <h1>Redes Sociales</h1>
+        <p class="social-media">
+          <strong>Facebook:</strong><a href="#">@pethuboficial</a>
+        </p>
+        <p class="social-media">
+          <strong>Instagram:</strong><a href="#">@pethub.cl</a>
+        </p>
+        <p class="social-media">
+          <strong>Twitter:</strong><a href="#">@pethub</a>
+        </p>
+      </div>
+    </footer>
+		<script src="static/js/register.js"></script>
+  </body>
+</html>

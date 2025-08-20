@@ -1,4 +1,4 @@
-console.log("script funcionando")
+const users = JSON.parse(localStorage.getItem('DatosUsuarios') || "[]");
 
 let usuariosAdmin = {
 	"email": "admin@gmail.com",
@@ -6,9 +6,11 @@ let usuariosAdmin = {
 	"estado": true
 }
 
-localStorage.setItem("DatosUsuarios", JSON.stringify(usuariosAdmin))
+users.push(usuariosAdmin)
 
-document.addEventListener("DOMContentLoaded", function() {
+localStorage.setItem("DatosUsuarios", JSON.stringify(users))
+
+document.addEventListener("DOMContentLoaded", function () {
 
 	const signinButton = document.getElementById("signin-button");
 
@@ -37,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			alert("petiso bandido esta contraseña no existe");
 			return
 		}
+
+		return window.location.href="../../home.html"
 	}
 
 	signinButton.onclick = validateUser;
