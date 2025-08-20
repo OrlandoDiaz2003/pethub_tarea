@@ -148,6 +148,11 @@ body {
   gap: 15px;
 }
 
+.register-form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .button-login {
   display: flex;
   flex-direction: column;
