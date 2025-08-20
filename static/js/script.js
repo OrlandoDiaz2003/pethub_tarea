@@ -8,30 +8,36 @@ let usuariosAdmin = {
 
 localStorage.setItem("DatosUsuarios", JSON.stringify(usuariosAdmin))
 
-function validateUser() {
-	let usuario = usuariosAdmin.email
-	let password = usuariosAdmin.password
+document.addEventListener("DOMContentLoaded", function() {
 
-	let nombreUsuario = document.getElementById("user-email").value
-	let contraseñaUsuario = document.getElementById("user-password").value
+	const signinButton = document.getElementById("signin-button");
 
-	if (nombreUsuario !== usuario) {
-		console.log("se cumplio la condicion")
-		alert("petiso bandido no existe este usuario")
-		return
+	function validateUser() {
+
+		const usuario = usuariosAdmin.email
+		const password = usuariosAdmin.password
+
+		const nombreUsuario = document.getElementById("user-email").value
+		const contraseñaUsuario = document.getElementById("user-password").value
+
+		if (nombreUsuario === "" || contraseñaUsuario === "") {
+			console.error("el usuario dejo el formulario vacio");
+			alert("Debes rellenar el formulario para continuar");
+			return
+		}
+
+		if (nombreUsuario !== usuario) {
+			console.error("el usuario no ingresado el admin");
+			alert("petiso bandido no existe este usuario");
+			return
+		}
+
+		if (password !== contraseñaUsuario) {
+			console.error("el usuario se equivoco en la contraseña");
+			alert("petiso bandido esta contraseña no existe");
+			return
+		}
 	}
 
-	if (password !== contraseñaUsuario) {
-		console.log("se cumplio la condicion")
-		alert("petiso bandido esta contraseña no existe")
-		return
-	}
-}
-document.addEventListener("DOMContentLoaded", () => {
-	const form = document.querySelector(".login-form")
-
-	form.addEventListener("submit", (e) => {
-		e.preventDefault()
-		validateUser()
-	})
-})
+	signinButton.onclick = validateUser;
+});
