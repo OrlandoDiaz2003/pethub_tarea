@@ -1,34 +1,33 @@
-const users = JSON.parse(localStorage.getItem('DatosUsuarios') || "[]");
+import User from "./user.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-	const registerButton= document.getElementById("register-button")
 
-	function validateRegister() {
-		console.log("Funcion para validar registro")
-        const username = document.getElementById("user-name-register").value
-		const emailRegister = document.getElementById("user-email-register").value
-		const passwdRegister = document.getElementById("user-password-register").value
-		const passwdRegisterConfirm = document.getElementById("user-password-register-confirmation").value
+document.addEventListener("DOMContentLoaded", function() {
+	console.log("funcion de registrar funcionando");
+	const register = document.getElementById("register-button")
 
-		if (emailRegister === "" || passwdRegister === "" || passwdRegisterConfirm === "" || username === ""){
-			return alert("Debes rellenar todos los campos para registrarte")
+	register.onclick = () => {
+
+		let name = document.getElementById("user-name-register").value;
+		let email = document.getElementById("user-email-register").value;
+		let passwd = document.getElementById("user-password-register").value;
+
+		if (name === '' || email === '' || passwd === '') {
+			return alert("Debes rellenar el formulario para continuar")
 		}
 
-		if (passwdRegister !== passwdRegisterConfirm) {
-			return alert("La contraseña no concide")
+		let users = JSON.parse(localStorage.getItem("Users")) || [];
+		for(const user of users){
+			if(user.email === email){
+				console.error("este usuario ya existe")
+				return
+			}
 		}
+		const newUser = new User(name, email, passwd, true);
 
-        let newUser = {
-            "nombre": username,
-            "email": emailRegister,
-            "passwd": passwdRegister,
-            "estado": true
-        }
-        users.push(newUser)
 
-        localStorage.setItem("DatosUsuarios", JSON.stringify(users))
+		users.push(newUser);
 
-	}
+		localStorage.setItem("Users", JSON.stringify(users));
+	};
+});
 
-	registerButton.onclick = validateRegister;
-})
